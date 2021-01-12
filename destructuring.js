@@ -35,10 +35,10 @@ let {color, make, model, year} = carDetails
 function greeting( obj ) {
   //Code Here
   let {firstName, lastName, title} = obj
-  console.log(lastName)
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
+  
 }
 
 
@@ -54,8 +54,8 @@ function greeting( obj ) {
 
 //Code Here
 
-function totalPopulation(obj){
-  let {utah, california, texas, arizona} = obj
+function totalPopulation(obj1){
+  let {utah, california, texas, arizona} = obj1
   return utah + california + texas + arizona
 }
 
@@ -71,25 +71,34 @@ function totalPopulation(obj){
 */
 
 //Code Here
-
+function ingredients(obj2){
+  let {carb, fat, protein} = obj2
+  return obj3 = [...obj2]
+}
+console.log()
 
 
 ////////// PROBLEM 5 //////////
 
 /*
-  Now we will use object destructuring as the function's parameter instead of destructuring the object inside of the function declaration.
+  Now we will use object destructuring as the function's parameter instead
+  of destructuring the object inside of the function declaration.
   Example:
     function example( {one, two, three} ) {
       return one + two + three
     }
 
-  Write a function called largeNumbers that will take a destructured object as it's parameter.
-  The object properties will be named first, second, and third and their values will be numbers.
+  Write a function called largeNumbers that will take a destructured 
+  object as it's parameter.
+  The object properties will be named first, second, and third 
+  and their values will be numbers.
   Find the smallest number of the three and return that number.
 */
 
 //Code Here
-
+function largeNumbers({first, second, third}){
+  return first + second + third
+}
 
 
 ////////// PROBLEM 6 //////////
