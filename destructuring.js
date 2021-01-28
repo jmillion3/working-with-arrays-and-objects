@@ -53,11 +53,11 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-function totalPopulation(obj1){
-  let {utah, california, texas, arizona} = obj1
+function totalPopulation(obj){
+  let {utah, california, texas, arizona} = obj
   return utah + california + texas + arizona
 }
+
 
 
 ////////// PROBLEM 4 //////////
@@ -71,11 +71,10 @@ function totalPopulation(obj1){
 */
 
 //Code Here
-function ingredients(obj2){
-  let {carb, fat, protein} = obj2
-  return obj3 = [...obj2]
+function ingredients(obj){
+  let {carb, fat, protein} = obj
+  return [carb, fat, protein]
 }
-console.log()
 
 
 ////////// PROBLEM 5 //////////
@@ -97,7 +96,13 @@ console.log()
 
 //Code Here
 function largeNumbers({first, second, third}){
-  return first + second + third
+  if(first < second && third){
+    return first
+  } else if (second < first && third){
+    return second
+  } else {
+    return third
+  }
 }
 
 
@@ -110,5 +115,28 @@ function largeNumbers({first, second, third}){
 */
 
 //Code Here
+function numberGroups({a, b, c}){
+  if(a.length > b.length && a.length > c.length){
+    return a
+  } else if (b.length > a.length && b.length > c.length){
+    return b
+  } else {
+    return c
+  }
+}
 
 
+// let {color, make, model, year} = carDetails
+// let {firstName, lastName, title} = obj
+// function totalPopulation(obj1){
+//   let {utah, california, texas, arizona} = obj1
+//   return utah + california + texas + arizona
+// }
+// function ingredients(obj2){
+//   let {carb, fat, protein} = obj2
+//   return obj3 = [...obj2]
+// }
+// console.log()
+// function largeNumbers({first, second, third}){
+//   return first + second + third
+// }
